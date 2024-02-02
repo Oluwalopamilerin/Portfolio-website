@@ -1,4 +1,14 @@
+const sidebarMenu = document.querySelector(".menu-icon");
+const sidebar = document.querySelector(".sidebar-nav");
+const sidebarClose = document.querySelector(".sidebar-close")
 
+sidebarMenu.addEventListener("click", () => {
+  sidebar.classList.add("active-sidebar")
+})
+
+sidebarClose.addEventListener("click", () => {
+  sidebar.classList.remove("active-sidebar")
+})
 const tabLinks = document.querySelectorAll(".tab-links");
 const tabContents = document.querySelectorAll(".tab-contents");
 const tabContent1 = tabContents[0];

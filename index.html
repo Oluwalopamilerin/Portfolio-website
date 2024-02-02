@@ -5,13 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Website</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="header">
     <!-- <img src="images/IMG-20230717-WA0004.jpg" alt=""> -->
     <div class="container">
-      <nav>
-        <img src="images/logo.png" class="logo" alt="">
+      <h1>Logo</h1>
+      <!-- <img src="images/logo.png" class="logo" alt=""> -->
+      <div class="menu-icon"><ion-icon name="menu"></ion-icon></div>
+      <nav class="sidebar-nav">
+        <ion-icon name="close-circle-outline" class="sidebar-close"></ion-icon>
         <ul>
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
@@ -20,14 +26,27 @@
           <li><a href="">Contact</a></li>
         </ul>
       </nav>
-      <div class="header-text">
-        <p>Frontend developer</p>
-        <h1>Hi, I'm <span>Oluwapamilerin.</span> <br> Welcome to my portfolio.</h1>
-      </div>
+         
+
+      <nav class="main-navbar">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+      
+    <!-- <div class="header-text">
+      <p>Frontend developer</p>
+      <h2>Hi, I'm <span>Oluwapamilerin.</span> <br> Welcome to my portfolio.</h1>
+    </div>
+    
   </div>
 
-<!-- --------------about------------ -->
+---------------about------------
   <div id="about">
     <div class="container">
       <div class="row">
@@ -71,10 +90,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- -------------services--------------- -->
-  <div id="services">
+  <!-- <div id="services">
     <div class="container">
       <h1 class="section-heading">My Services</h1>
       <div class="services-list">
@@ -83,9 +102,10 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit lectus non orci tristique ornare. In hac habitasse platea dictumst.</p>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <script src="script.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
