@@ -1,6 +1,11 @@
 const hamburgerIcon = document.querySelector(".hamburger-icon");
 const menuLinks = document.querySelector(".hamnav-links")
 const cvButton = document.querySelector(".btn.btn-color-2");
+const contactButton = document.querySelector(".btn.btn-color-1");
+const linkedIn = document.querySelector(".linkedin");
+const github = document.querySelector(".github");
+const arrowIcon = document.querySelector(".icon.arrow");
+const projectOne = document.querySelector(".btn.btn-color-2.project-btn");
 
 hamburgerIcon.addEventListener("click", () => {
   menuLinks.classList.toggle("active-menu");
@@ -16,7 +21,25 @@ cvButton.addEventListener("click", () => {
   window.open("./assets/OYEWOLE, DEBORAH PAMILERIN's CV.pdf");
 })
 
+contactButton.addEventListener("click", () => {
+  location.href = "./#contact"
+})
 
+linkedIn.addEventListener("click", () => {
+  location.href = "https://linkedin.com";
+  
+})
+github.addEventListener("click", () => {
+  location.href = "https://github.com";
+})
+
+arrowIcon.addEventListener("click", () => {
+  location.href = "./#experience";
+})
+
+projectOne.addEventListener("click", () => {
+  location.href = "https://oluwalopamilerin.github.io/Login-registration-website"
+})
 
 
 
