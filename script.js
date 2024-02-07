@@ -1,3 +1,28 @@
+const hamburgerIcon = document.querySelector(".hamburger-icon");
+const menuLinks = document.querySelector(".hamnav-links")
+const cvButton = document.querySelector(".btn.btn-color-2");
+
+hamburgerIcon.addEventListener("click", () => {
+  menuLinks.classList.toggle("active-menu");
+  hamburgerIcon.classList.toggle("active-menu");
+});
+
+menuLinks.addEventListener("click", () =>{
+  menuLinks.classList.toggle("active-menu");
+  hamburgerIcon.classList.toggle("active-menu");
+})
+
+cvButton.addEventListener("click", () => {
+  window.open("./assets/OYEWOLE, DEBORAH PAMILERIN's CV.pdf");
+})
+
+
+
+
+
+
+
+
 // const sidebarMenu = document.querySelector(".menu-icon");
 // const sidebar = document.querySelector(".sidebar-nav");
 // const sidebarClose = document.querySelector(".sidebar-close")

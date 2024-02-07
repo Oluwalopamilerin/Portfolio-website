@@ -25,13 +25,19 @@ nav>.logo{
   font-size: 1.5rem;
 }
 
-.nav-links a{
+.hamnav-links{
+  list-style: none;
+}
+
+.nav-links a,
+.hamnav-links a{
   color: #000;
   text-decoration: none;
   position: relative;
 }
 
-.nav-links>li>a::after{
+.nav-links>li>a::after,
+.hamnav-links>li>a::after{
   content: "";
   background-color:#000;
   width: 100%;
@@ -40,14 +46,104 @@ nav>.logo{
   left: 0;
   bottom: 0;
   transform: scale(0);
-  transition: transform 0.8s ease;
+  transition: transform 0.5s ease;
 }
 
-.nav-links>li>a:hover::after{
+.nav-links>li>a:hover::after,
+.hamnav-links>li>a:hover::after{
   transform: scale(1);
 }
 
+/* HAMBURGER-MENU */
+#hamburger-nav{
+  display: none;
+}
 
+.hamburger-menu{
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon>span{
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links>.hamnav-links{
+  position: absolute;
+  top: 12%;
+  right: 23%;
+  background-color: white;
+  width: fit-content;
+  transform: scale(0);
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;;
+}
+
+.menu-links>.hamnav-links>li>a{
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.menu-links>.hamnav-links.active-menu{
+  transform: scale(1);
+}
+
+.hamburger-icon.active-menu span:first-child{
+  transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.active-menu span:nth-child(2){
+ opacity: 0;
+}
+.hamburger-icon.active-menu span:last-child{
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.pic-container{
+  width: 500px;
+}
+
+.pic-container>img{
+  width: 100%;
+ 
+}
+
+/* .hamburger-icon span:first-child{
+  transform: none;
+}
+.hamburger-icon span:first-child{
+  opacity: 1;
+}
+.hamburger-icon span:first-child{
+  transform: none;
+} */
+
+/* MEDIA QUERIES */
+
+@media(max-width:1200px){
+  #desktop-nav{
+    display: none;
+  }
+  #hamburger-nav{
+    display: flex;
+  }
+
+  
+}
 
 /* body{
   background: #080808;
