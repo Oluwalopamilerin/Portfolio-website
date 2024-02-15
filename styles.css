@@ -619,3 +619,6 @@ footer p{
   bottom: -8px;
   transition: 0.5s;
  }
+
+
+ @media(max-width:320px)
