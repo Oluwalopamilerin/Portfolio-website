@@ -621,4 +621,19 @@ footer p{
  }
 
 
- @media(max-width:320px)
+ @media(max-width:320px){
+  .contact-info-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-info-container a{
+    font-size: 0.7rem;
+  }
+ }
+
+ @media(max-width:240px){
+  .contact-info-container a{
+    font-size: 0.5rem;
+  }
+ }
